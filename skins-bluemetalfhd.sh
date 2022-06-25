@@ -125,7 +125,9 @@ sleep 1;
         opkg install --force-overwrite /tmp/skins-bluemetalfhd_2.08a_all.ipk
         rm -f /tmp/skins-bluemetalfhd_2.08a_all.ipk
          
-    elif [ "$PYTHON" = "PY3" ]; then
+    elif grep -qs -i 'armv7l' cat $CHECK ; then
+    echo "[ Your device is armv7l ]"
+    if [ "$PYTHON" = "PY3" ]; then
         wget -q  "--no-check-certificate" https://raw.githubusercontent.com/emil237/skins-openatv/main/skins-bluemetalfhd_$VERSION_all.ipk -O /tmp/skins-bluemetalfhd_2.08a_all.ipk
         opkg install --force-overwrite /tmp/skins-bluemetalfhd_2.08a_all.ipk
         rm -f /tmp/skins-bluemetalfhd_2.08a_all.ipk
@@ -156,6 +158,7 @@ else
     killall -9 enigma2
 fi
 exit 0
+
 
 
 
