@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#wget -q "--no-check-certificate" https://raw.githubusercontent.com/emil237/dreamsat/main/installer.sh  -O - | /bin/sh
+#wget -q "--no-check-certificate" https://raw.githubusercontent.com/emil237/skins-openatv/main/skins-bluemetalfhd.sh  -O - | /bin/sh
 VERSION=2.08a
 VERSIONS=2.10
 PLUGIN_PATH='/usr/share/enigma2/BlueMetalFHD'
@@ -156,6 +156,7 @@ else
     killall -9 enigma2
 fi
 exit 0
+
 
 
 
