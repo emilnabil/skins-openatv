@@ -109,7 +109,6 @@ else
     echo "#########################################################"
     echo "#       $PYSIX Not found in feed                        #"
     echo "#########################################################"
-
 fi
 
 CHECK='/tmp/check'
@@ -120,13 +119,14 @@ sleep 1;
         wget -q  "--no-check-certificate" https://raw.githubusercontent.com/emil237/skins-openatv/main/skins-bluemetalfhd_$VERSIONS_all.ipk -O /tmp/skins-bluemetalfhd_2.10_all.ipk
   opkg install --force-overwrite /tmp/skins-bluemetalfhd_2.10_all.ipk
         rm -f /tmp/skins-bluemetalfhd_2.10_all.ipk
-     elif
- grep -qs -i 'armv7l' cat $CHECK ; then
-    echo "[ Your device is armv7l ]"
+
+     fi
+
     if [ "$PYTHON" = "PY3" ]; then
         wget -q  "--no-check-certificate" https://raw.githubusercontent.com/emil237/skins-openatv/main/skins-bluemetalfhd_$VERSION_all.ipk -O /tmp/skins-bluemetalfhd_2.08a_all.ipk
         opkg install --force-overwrite /tmp/skins-bluemetalfhd_2.08a_all.ipk
         rm -f /tmp/skins-bluemetalfhd_2.08a_all.ipk
+
   else
         wget -q  "--no-check-certificate" https://raw.githubusercontent.com/emil237/skins-openatv/main/skins-bluemetalfhd_$VERSION_all.ipk -O /tmp/skins-bluemetalfhd_2.08a_all.ipk
         opkg install --force-overwrite /tmp/skins-bluemetalfhd_2.08a_all.ipk
@@ -157,6 +157,7 @@ else
     killall -9 enigma2
 fi
 exit 0
+
 
 
 
