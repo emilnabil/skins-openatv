@@ -16,7 +16,7 @@ opkg install curl
 sleep 2
 
 cd /tmp || exit
-curl -k -L "https://github.com/emilnabil/skins-openatv/raw/refs/heads/main/skin-smoogemini.tar.gz" -o /tmp/SKIN_BLACKNEON-XP-FHD-v2_arabicdiscription_by_ismail_elkhooly.tar.gz
+curl -k -L "https://github.com/emilnabil/skins-openatv/raw/refs/heads/main/SKIN_BLACKNEON-XP-FHD-v2_arabicdiscription_by_ismail_elkhooly.tar.gz" -o /tmp/SKIN_BLACKNEON-XP-FHD-v2_arabicdiscription_by_ismail_elkhooly.tar.gz
 sleep 2
 
 echo "Installing ...."
@@ -27,15 +27,6 @@ echo ""
 sleep 1
 rm -f /tmp/SKIN_BLACKNEON-XP-FHD-v2_arabicdiscription_by_ismail_elkhooly.tar.gz
 echo " Uploaded By Emil Nabil"
-sleep 2
+sleep 3
 exit 0
-
-
-
-
-
-
-
-
-
 
