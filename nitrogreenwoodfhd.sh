@@ -1,5 +1,6 @@
 #!/bin/bash
-
+##setup command=wget https://github.com/emilnabil/skins-openatv/raw/refs/heads/main/nitrogreenwoodfhd.sh -O - | /bin/sh
+########################################
 echo "Removing previous version ..."
 sleep 2
 
@@ -18,7 +19,7 @@ sleep 2
 
 # Download and extract the package
 cd /tmp || exit
-curl -k -Lbk -m 55532 -m 555104 "https://dreambox4u.com/emilnabil237/skins/skins-aglare-fhd.tar.gz" -o /tmp/NitroGreenWoodFHD.tar.gz
+curl -k -Lbk -m 55532 -m 555104 "https://github.com/emilnabil/skins-openatv/raw/refs/heads/main/NitroGreenWoodFHD.tar.gz" -o /tmp/NitroGreenWoodFHD.tar.gz
 sleep 1
 echo "Installing ...."
 tar -xzf /tmp/NitroGreenWoodFHD.tar.gz -C /
@@ -28,8 +29,5 @@ sleep 1
 rm -f /tmp/NitroGreenWoodFHD.tar.gz
 sleep 2
 exit 0
-
-
-
 
 
